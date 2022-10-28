@@ -1,1 +1,3 @@
 __cache__/
+.venv/
+dist/

@@ -6,7 +6,7 @@ def even():
     rounds = 3
 
     print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ') 
+    name = prompt.string('May I have your name? ')
     print('Hello, ' + name + '!')
     print('Answer "yes" if the number is even, otherwise answer "no".')
     while rounds:
@@ -27,15 +27,5 @@ def even():
             else:
                 print(f"{answer} is wrong answer ;(. Correct answer was 'no'. Let's try again, {name}")
                 break
-    if not rounds:        
+    if not rounds:      
         print(f'Congratulations, {name}!')
-
-
-                
-
-
-
-
-            
-
-    

@@ -1,23 +1,20 @@
 import prompt
 
 
-name = ''
-
-
 def welcome():
     print('Welcome to the Brain Games!')
-    global name
     name = prompt.string('May I have your name? ')
     print('Hello, ' + name + '!')
+    return name
 
 
-def lose():
-    print(f"{answer} is wrong answer ;(. Correct answer was {result}. Let's try again, {name}")
+name = welcome()
 
 
-def win():
-    print(f'Congratulations, {name}!')
-    
 
-
+def end():
+    if rounds:
+        print(f"{answer} is wrong answer ;(. Correct answer was {result}. Let's try again, {name}")
+    else:
+        print(f'Congratulations, {name}!')
 

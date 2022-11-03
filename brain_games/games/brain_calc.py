@@ -1,12 +1,9 @@
 import prompt
 from random import randint, choice
 
-rounds = 3
-answer = ''
 
 def calc():
-    global rounds
-    global answer
+    rounds = 3
     print('What is the result of the expression?')
     while rounds:
         a = randint(1, 12)
@@ -21,5 +18,25 @@ def calc():
             rounds -= 1
         else:
             break
+    return rounds, answer, result
+
+
+rounds, answer, result = calc()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

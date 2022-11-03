@@ -1,13 +1,11 @@
 from random import randint
 import prompt
 
+rounds = 3
+name = ''
+
 
 def even():
-    rounds = 3
-
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print('Hello, ' + name + '!')
     print('Answer "yes" if the number is even, otherwise answer "no".')
     while rounds:
         question = randint(1, 100)

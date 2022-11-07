@@ -3,6 +3,16 @@ from random import randint, choice
 from brain_games.main import get_username, get_question, welcome_user, win, lose
 
 
+def get_expression(a, b, op):
+    if op == ' + ':
+        result = a + b
+    elif op == ' - ':
+        result = a - b
+    elif op == ' * ':
+        result = a * b
+    return result
+
+
 def calc():
     ROUNDS = 3
     print('Welcome to the Brain Games!')
@@ -15,12 +25,7 @@ def calc():
         operator = choice([' + ', ' - ', ' * '])
         question = str(a) + operator + str(b)
         get_question(question)
-        if operator == ' + ':
-            result = a + b
-        elif operator == ' - ':
-            result = a - b
-        elif operator == ' * ':
-            result = a * b
+        result = get_expression(a, b, operator)
         answer = prompt.string('Your answer: ')
         if answer == str(result):
             print('Correct!')

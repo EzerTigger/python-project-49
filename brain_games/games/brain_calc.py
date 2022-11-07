@@ -3,14 +3,13 @@ from random import randint, choice
 from brain_games.main import get_username, get_question, welcome_user, win, lose
 
 
-# Оно работает!)
 def calc():
-    rounds = 3
+    ROUNDS = 3
     print('Welcome to the Brain Games!')
     username = get_username()
     welcome_user(username)
     print('What is the result of the expression?')
-    while rounds:
+    while ROUNDS:
         a = randint(1, 12)
         b = randint(1, 12)
         operator = choice([' + ', ' - ', ' * '])
@@ -25,10 +24,10 @@ def calc():
         answer = prompt.string('Your answer: ')
         if answer == str(result):
             print('Correct!')
-            rounds -= 1
+            ROUNDS -= 1
         else:
             break
-    if not rounds:
+    if not ROUNDS:
         win(username)
     else:
         lose(answer, result, username)

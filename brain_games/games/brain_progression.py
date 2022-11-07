@@ -13,24 +13,25 @@ def make_progression():
 
 
 def progression():
-    rounds = 3
+    ROUNDS = 3
     print('Welcome to the Brain Games!')
     username = get_username()
     welcome_user(username)
     print('What number is missing in the progression?')
-    while rounds:
+    while ROUNDS:
         prog = make_progression()
         idx = randint(0, len(prog) - 1)
-        question = " ".join(str(el) for el in prog).replace(str(prog[idx]), '..', 1)
+        question = " ".join(str(el) for el in prog).replace(str(prog[idx]),
+                                                            '..', 1)
         get_question(question)
         answer = prompt.string('Your answer: ')
         result = str(prog[idx])
         if answer == str(result):
             print('Correct!')
-            rounds -= 1
+            ROUNDS -= 1
         else:
             break
-    if not rounds:
+    if not ROUNDS:
         win(username)
     else:
         lose(answer, result, username)

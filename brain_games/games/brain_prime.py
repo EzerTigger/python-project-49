@@ -14,22 +14,22 @@ def is_prime(x):
 
 
 def prime():
-    rounds = 3
+    ROUNDS = 3
     print('Welcome to the Brain Games!')
     username = get_username()
     welcome_user(username)
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    while rounds:
+    while ROUNDS:
         question = randint(1, 100)
         get_question(question)
         answer = prompt.string('Your answer: ')
         result = is_prime(question)
         if answer == result:
             print('Correct!')
-            rounds -= 1
+            ROUNDS -= 1
         else:
             break
-    if not rounds:
+    if not ROUNDS:
         win(username)
     else:
         lose(answer, result, username)

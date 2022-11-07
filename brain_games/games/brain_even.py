@@ -4,12 +4,12 @@ from brain_games.main import get_username, get_question, welcome_user, win, lose
 
 
 def even():
-    rounds = 3
+    ROUNDS = 3
     print('Welcome to the Brain Games!')
     username = get_username()
     welcome_user(username)
     print('Answer "yes" if the number is even, otherwise answer "no".')
-    while rounds:
+    while ROUNDS:
         question = randint(1, 100)
         get_question(question)
         answer = prompt.string('Your answer: ')
@@ -19,10 +19,10 @@ def even():
             result = 'no'
         if answer == result:
             print('Correct!')
-            rounds -= 1
+            ROUNDS -= 1
         else:
             break
-    if not rounds:
+    if not ROUNDS:
         win(username)
     else:
         lose(answer, result, username)

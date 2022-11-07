@@ -15,7 +15,8 @@ def get_question(question):
 
 
 def lose(ans, res, name):
-    print(f"{ans} is wrong answer ;(. Correct answer was {res}. Let's try again, {name}")
+    print(f"{ans} is wrong answer ;(. Correct answer was {res}."
+          f" Let's try again, {name}!")
 
 
 def win(name):

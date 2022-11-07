@@ -1,20 +1,22 @@
 import prompt
 
 
-def welcome():
-    print('Welcome to the Brain Games!')
+def get_username():
     name = prompt.string('May I have your name? ')
-    print('Hello, ' + name + '!')
     return name
 
 
-name = welcome()
+def welcome_user(name):
+    print(f'Hello, {name}!')
 
 
+def get_question(question):
+    print(f'Question: {question}')
 
-def end():
-    if rounds:
-        print(f"{answer} is wrong answer ;(. Correct answer was {result}. Let's try again, {name}")
-    else:
-        print(f'Congratulations, {name}!')
 
+def lose(ans, res, name):
+    print(f"{ans} is wrong answer ;(. Correct answer was {res}. Let's try again, {name}")
+
+
+def win(name):
+    print(f'Congratulations, {name}!')

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from games.brain_even import even
+from brain_games.games.brain_even import even
 
 
 def main():
@@ -9,9 +9,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
-
-
-

@@ -1,6 +1,6 @@
 import prompt
 from random import randint, choice
-from brain_games.main import *
+from brain_games.main import get_username, get_question, welcome_user, win, lose
 
 
 # Оно работает!)
@@ -27,31 +27,8 @@ def calc():
             print('Correct!')
             rounds -= 1
         else:
-            break       
+            break
     if not rounds:
         win(username)
     else:
         lose(answer, result, username)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

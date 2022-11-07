@@ -1,4 +1,4 @@
-from brain_games.main import *
+from brain_games.main import get_username, get_question, welcome_user, win, lose
 from random import randint
 import prompt
 

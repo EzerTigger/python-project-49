@@ -45,7 +45,7 @@ def game(game_begin, which_game):
         question, result = which_game()
         get_question(question)
         answer = get_answer()
-        if answer == result:
+        if answer == str(result):
             print('Correct!')
             ROUNDS -= 1
         else:

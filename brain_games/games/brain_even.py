@@ -1,6 +1,13 @@
 from random import randint
 
 
+def is_even(x):
+    if x % 2 == 0:
+        return 'yes'
+    else:
+        return 'no'
+
+
 def even_begin():
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
@@ -10,9 +17,7 @@ def even_question():
     return question
 
 
-def even_result(question):
-    if question % 2 == 0:
-        result = 'yes'
-    else:
-        result = 'no'
-    return result
+def even_game():
+    question = even_question()
+    result = is_even(question)
+    return question, result

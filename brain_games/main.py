@@ -21,3 +21,10 @@ def lose(ans, res, name):
 
 def win(name):
     print(f'Congratulations, {name}!')
+
+
+def end(rounds, name, ans, res):
+    if not rounds:
+        win(name)
+    else:
+        lose(ans, res, name)

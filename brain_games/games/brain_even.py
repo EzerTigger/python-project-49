@@ -1,6 +1,6 @@
 from random import randint
 import prompt
-from brain_games.main import get_username, get_question, welcome_user, win, lose
+from brain_games.main import get_username, get_question, welcome_user, end
 
 
 def even():
@@ -22,7 +22,4 @@ def even():
             ROUNDS -= 1
         else:
             break
-    if not ROUNDS:
-        win(username)
-    else:
-        lose(answer, result, username)
+    end(ROUNDS, username, answer, result)

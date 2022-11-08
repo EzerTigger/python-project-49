@@ -1,4 +1,4 @@
-from brain_games.main import get_username, get_question, welcome_user, win, lose
+from brain_games.main import get_question, get_username, welcome_user, end
 from random import randint
 import prompt
 
@@ -31,7 +31,4 @@ def progression():
             ROUNDS -= 1
         else:
             break
-    if not ROUNDS:
-        win(username)
-    else:
-        lose(answer, result, username)
+    end(ROUNDS, username, answer, result)

@@ -8,7 +8,7 @@ def get_username():
 
 
 def welcome_user(name):
-    print(f"hello, {name}!")
+    print(f"hello, {name}")
 
 
 def get_answer():

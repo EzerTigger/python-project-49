@@ -20,7 +20,7 @@ def prime():
     welcome_user(username)
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     while ROUNDS:
-        question = randint(1, 100)
+        question = randint(2, 100)
         get_question(question)
         answer = prompt.string('Your answer: ')
         result = is_prime(question)

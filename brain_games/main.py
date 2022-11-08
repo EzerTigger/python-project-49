@@ -1,4 +1,5 @@
 import prompt
+from brain_games.games.brain_even import even_begin, even_question, even_result
 
 
 def get_username():
@@ -7,7 +8,12 @@ def get_username():
 
 
 def welcome_user(name):
-    print(f'Hello, {name}!')
+    print(f"hello {name}!")
+
+
+def get_answer():
+    answer = prompt.string('Your answer: ')
+    return answer
 
 
 def get_question(question):
@@ -28,3 +34,22 @@ def end(rounds, name, ans, res):
         win(name)
     else:
         lose(ans, res, name)
+
+
+def main_even():
+    ROUNDS = 3
+    print('Welcome to the Brain Games!')
+    username = get_username()
+    welcome_user(username)
+    even_begin()
+    while ROUNDS:
+        question = even_question()
+        get_question(question)
+        answer = get_answer()
+        result = even_result(question)
+        if answer == result:
+            print('Correct!')
+            ROUNDS -= 1
+        else:
+            break
+    end(ROUNDS, username, answer, result)

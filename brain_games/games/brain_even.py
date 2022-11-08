@@ -8,10 +8,6 @@ def is_even(x):
         return 'no'
 
 
-def even_begin():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-
-
 def even_question():
     question = randint(1, 100)
     return question

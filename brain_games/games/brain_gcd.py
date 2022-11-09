@@ -13,7 +13,7 @@ def find_gcd(a, b):
     return gcd
 
 
-def gcd_game():
+def game():
     a = randint(1, 100)
     b = randint(1, 100)
     question = f'{a} {b}'

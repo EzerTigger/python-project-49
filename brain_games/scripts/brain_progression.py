@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
 from brain_games.main import game
-from brain_games.games.brain_progression import progression_game, RULE
+import brain_games.games.brain_progression as progression
 
 
 def main():
-    game(RULE, progression_game)
+    game(progression)
 
 
 if __name__ == '__main__':

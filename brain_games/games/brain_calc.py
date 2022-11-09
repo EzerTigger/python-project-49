@@ -13,7 +13,7 @@ def get_expression(a, b, op):
     return result
 
 
-def calc_game():
+def game():
     a = randint(1, 12)
     b = randint(1, 12)
     operator = choice([' + ', ' - ', ' * '])

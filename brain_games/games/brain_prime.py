@@ -13,7 +13,7 @@ def is_prime(x):
     return True
 
 
-def prime_game():
+def game():
     question = randint(2, 100)
     if is_prime(question):
         result = 'yes'

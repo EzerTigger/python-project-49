@@ -12,7 +12,7 @@ def make_progression():
     return prog
 
 
-def progression_game():
+def game():
     prog = make_progression()
     idx = randint(0, len(prog) - 1)
     question = " ".join(str(el) for el in prog).replace(str(prog[idx]),

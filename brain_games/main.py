@@ -1,12 +1,12 @@
 import prompt
 
 
-def game(game_begin, which_game):
+def game(rule, which_game):
     ROUNDS = 3
     print('Welcome to the Brain Games!')
     username = prompt.string('May I have your name? ')
     print(f"Hello, {username}")
-    print(game_begin)
+    print(rule)
     while ROUNDS:
         question, result = which_game()
         print(f'Question: {question}')
@@ -15,9 +15,8 @@ def game(game_begin, which_game):
             print('Correct!')
             ROUNDS -= 1
         else:
+            print(f"{answer} is wrong answer ;(. Correct answer was {result}."
+                  f" Let's try again, {username}!")
             break
-    if not ROUNDS:
-        print(f'Congratulations, {username}!')
     else:
-        print(f"{answer} is wrong answer ;(. Correct answer was {result}."
-              f" Let's try again, {username}!")
+        print(f'Congratulations, {username}!')

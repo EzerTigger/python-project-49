@@ -5,13 +5,16 @@ def is_prime(x):
     divider = x // 2
     while divider > 1:
         if x % divider == 0:
-            return 'no'
+            return False
         else:
             divider -= 1
-    return 'yes'
+    return True
 
 
 def prime_game():
     question = randint(2, 100)
-    result = is_prime(question)
+    if is_prime(question):
+        result = 'yes'
+    else:
+        result = 'no'
     return question, result

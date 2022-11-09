@@ -1,10 +1,7 @@
 #!/usr/bin/env python3
 
 from brain_games.main import game
-from brain_games.games.brain_calc import calc_game
-
-
-RULE = 'What is the result of the expression?'
+from brain_games.games.brain_calc import calc_game, RULE
 
 
 def main():

@@ -1,5 +1,7 @@
 from random import randint
 
+RULE = 'What number is missing in the progression?'
+
 
 def make_progression():
     first_el = randint(1, 20)

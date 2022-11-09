@@ -1,5 +1,7 @@
 from random import randint, choice
 
+RULE = 'What is the result of the expression?'
+
 
 def get_expression(a, b, op):
     if op == ' + ':

@@ -1,6 +1,12 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/EzerTigger/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/EzerTigger/python-project-49/actions)
 <a href="https://codeclimate.com/github/EzerTigger/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/55d0d7735efd70b4600d/maintainability" /></a>
+Python = "^3.10"
+Poetry = "^1.2.2"
+В Makefile доступны команды:
+сборка пакета: make build
+отладка публикации: make publish
+установка пакета: make package-install
 
 brain-even: [![asciicast](https://asciinema.org/a/534033.svg)](https://asciinema.org/a/534033)
 brain-calc:[![asciicast](https://asciinema.org/a/535529.svg)](https://asciinema.org/a/535529)

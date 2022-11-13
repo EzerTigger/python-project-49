@@ -2,12 +2,12 @@
 [![Actions Status](https://github.com/EzerTigger/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/EzerTigger/python-project-49/actions)
 <a href="https://codeclimate.com/github/EzerTigger/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/55d0d7735efd70b4600d/maintainability" /></a>
 
-####Getting started
+#### Getting started
 ***
 Clone the current repository via command:
 >git clone https://github.com/EzerTigger/python-project-49.git 
 
-####Requirements
+#### Requirements
 ***
 - Python = "^3.10"
 - Poetry = "^1.2.2"
@@ -18,7 +18,7 @@ Check your pip version with the following command:
 Make sure that pip is always up to update. If not, use the following:
 >python -m pip install --upgrade pip
 
-####Makefile
+#### Makefile
 ***
 Using the Makefile you can generate all the needed packages for your virtual env.
 

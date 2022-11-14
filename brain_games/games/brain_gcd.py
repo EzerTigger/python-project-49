@@ -3,19 +3,19 @@ from random import randint
 RULE = 'Find the greatest common divisor of given numbers.'
 
 
-def find_gcd(a, b):
-    gcd = min(a, b)
+def find_gcd(first_number, second_number):
+    gcd = min(first_number, second_number)
     while gcd > 0:
-        if a % gcd == 0 and b % gcd == 0:
+        if first_number % gcd == 0 and second_number % gcd == 0:
             return gcd
         else:
             gcd -= 1
     return gcd
 
 
-def game():
-    a = randint(1, 100)
-    b = randint(1, 100)
-    question = f'{a} {b}'
-    result = find_gcd(a, b)
+def get_game():
+    FIRST_NUMBER = randint(1, 100)
+    SECOND_NUMBER = randint(1, 100)
+    question = f'{FIRST_NUMBER} {SECOND_NUMBER}'
+    result = find_gcd(FIRST_NUMBER, SECOND_NUMBER)
     return question, result

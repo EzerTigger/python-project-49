@@ -3,18 +3,19 @@ from random import randint
 RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def is_prime(x):
-    divider = x // 2
+def is_prime(number):
+    divider = number // 2
     while divider > 1:
-        if x % divider == 0:
+        if number % divider == 0:
             return False
         else:
             divider -= 1
     return True
 
 
-def game():
-    question = randint(2, 100)
+def get_game():
+    RANDOM_NUMBER = randint(2, 100)
+    question = RANDOM_NUMBER
     if is_prime(question):
         result = 'yes'
     else:

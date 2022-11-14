@@ -3,20 +3,20 @@ from random import randint, choice
 RULE = 'What is the result of the expression?'
 
 
-def get_expression(a, b, op):
-    if op == ' + ':
-        result = a + b
-    elif op == ' - ':
-        result = a - b
-    elif op == ' * ':
-        result = a * b
-    return result
+def get_expression(first_number, second_number, operator):
+    if operator == ' + ':
+        expression = first_number + second_number
+    elif operator == ' - ':
+        expression = first_number - second_number
+    elif operator == ' * ':
+        expression = first_number * second_number
+    return expression
 
 
-def game():
-    a = randint(1, 12)
-    b = randint(1, 12)
+def get_game():
+    FIRST_NUMBER = randint(1, 12)
+    SECOND_NUMBER = randint(1, 12)
     operator = choice([' + ', ' - ', ' * '])
-    question = str(a) + operator + str(b)
-    result = get_expression(a, b, operator)
+    question = str(FIRST_NUMBER) + operator + str(SECOND_NUMBER)
+    result = get_expression(FIRST_NUMBER, SECOND_NUMBER, operator)
     return question, result

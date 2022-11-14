@@ -8,7 +8,7 @@ def game(which_game):
     print(f"Hello, {username}")
     print(which_game.RULE)
     while ROUNDS:
-        question, result = which_game.game()
+        question, result = which_game.get_game()
         print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
         if answer == str(result):

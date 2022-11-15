@@ -14,8 +14,8 @@ def make_progression():
 
 def get_game():
     progression = make_progression()
-    INDEX_OF_LOST_CHAR = randint(0, len(progression) - 1)
+    index_of_lost_char = randint(0, len(progression) - 1)
     question = " ".join(str(el) for el in progression).replace(
-               str(progression[INDEX_OF_LOST_CHAR]), '..', 1)
-    result = str(progression[INDEX_OF_LOST_CHAR])
+               str(progression[index_of_lost_char]), '..', 1)
+    result = str(progression[index_of_lost_char])
     return question, result

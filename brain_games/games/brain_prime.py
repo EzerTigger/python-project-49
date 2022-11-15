@@ -13,9 +13,13 @@ def is_prime(number):
     return True
 
 
+MIN_INTEGER = 2
+MAX_INTEGER = 100
+
+
 def get_game():
-    RANDOM_NUMBER = randint(2, 100)
-    question = RANDOM_NUMBER
+    number = randint(MIN_INTEGER, MAX_INTEGER)
+    question = number
     if is_prime(question):
         result = 'yes'
     else:

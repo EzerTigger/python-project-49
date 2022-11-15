@@ -13,9 +13,13 @@ def find_gcd(first_number, second_number):
     return gcd
 
 
+MIN_INTEGER = 1
+MAX_INTEGER = 100
+
+
 def get_game():
-    FIRST_NUMBER = randint(1, 100)
-    SECOND_NUMBER = randint(1, 100)
-    question = f'{FIRST_NUMBER} {SECOND_NUMBER}'
-    result = find_gcd(FIRST_NUMBER, SECOND_NUMBER)
+    first_number = randint(MIN_INTEGER, MAX_INTEGER)
+    second_number = randint(MIN_INTEGER, MAX_INTEGER)
+    question = f'{first_number} {second_number}'
+    result = find_gcd(first_number, second_number)
     return question, result

@@ -7,9 +7,13 @@ def is_even(number):
     return number % 2 == 0
 
 
+MIN_INTEGER = 1
+MAX_INTEGER = 100
+
+
 def get_game():
-    RANDOM_NUMBER = randint(1, 100)
-    question = RANDOM_NUMBER
+    number = randint(MIN_INTEGER, MAX_INTEGER)
+    question = number
     if is_even(question):
         result = 'yes'
     else:

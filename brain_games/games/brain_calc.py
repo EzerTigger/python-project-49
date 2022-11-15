@@ -13,10 +13,12 @@ def get_expression(first_number, second_number, operator):
     return expression
 
 
+OPERATOR = choice([' + ', ' - ', ' * '])
+
+
 def get_game():
     FIRST_NUMBER = randint(1, 12)
     SECOND_NUMBER = randint(1, 12)
-    operator = choice([' + ', ' - ', ' * '])
-    question = str(FIRST_NUMBER) + operator + str(SECOND_NUMBER)
-    result = get_expression(FIRST_NUMBER, SECOND_NUMBER, operator)
+    question = str(FIRST_NUMBER) + OPERATOR + str(SECOND_NUMBER)
+    result = get_expression(FIRST_NUMBER, SECOND_NUMBER, OPERATOR)
     return question, result
